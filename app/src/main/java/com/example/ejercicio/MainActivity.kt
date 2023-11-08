@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         BtnButtonPago.setOnClickListener {
             val PrecioNormal = textPrecio.text.toString().toDouble()
+            //ZAPATOS
             if (textCategoria.text.trim().toString().lowercase() == "zapato") {
                 if (PrecioNormal >= 1000) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     textPrecioTotal.text = String.format("Precio Total a Pagar: $" + PrecioNormal  * 1.18)
                 }
             }
-
+            //PRENDAS PARA DAMAS
             else if (textCategoria.text.trim().toString().lowercase() == "prendas para dama" || textCategoria.text.trim().toString().lowercase() == "ropa mujer") {
                 if (PrecioNormal >= 500) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                     textPrecioTotal.text = String.format("Precio Total a Pagar: $" + PrecioNormal * 1.18)
                 }
         }
-
+            //ELECTRODOMESTICOS
             else if (textCategoria.text.trim().toString().lowercase() == "electrodomesticos") {
                 if (PrecioNormal >= 6000) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
@@ -74,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                     textPrecioTotal.text = String.format("Precio Total a Pagar: $" + PrecioNormal * 1.18)
                 }
             }
-
+            //CELULARES
             else if (textCategoria.text.trim().toString().lowercase() == "celulares") {
                 if (PrecioNormal >= 3500) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
@@ -91,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                     textPrecioTotal.text = String.format("Precio Total a Pagar: $" + PrecioNormal * 1.18)
                 }
             }
-
+            //ROPA PARA CABALLERO
             else if (textCategoria.text.trim().toString().lowercase() == "ropa para caballero" || textCategoria.text.trim().toString().lowercase() == "ropa hombre" ) {
                 if (PrecioNormal >= 1500) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
@@ -108,7 +109,7 @@ class MainActivity : AppCompatActivity() {
                     textPrecioTotal.text = String.format("Precio Total a Pagar: $" + PrecioNormal * 1.18)
                 }
             }
-
+            //JUGUETES
             else if (textCategoria.text.trim().toString().lowercase() == "juguetes para niños" || textCategoria.text.trim().toString().lowercase() == "juguetes")  {
                 if (PrecioNormal >= 2500) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
@@ -125,7 +126,7 @@ class MainActivity : AppCompatActivity() {
                     textPrecioTotal.text = String.format("Precio Total a Pagar: $" + PrecioNormal * 1.18)
                 }
             }
-
+            //LAPTOPS
             else if (textCategoria.text.trim().toString().lowercase() == "laptops") {
                 if (PrecioNormal >= 8000) {
                     textSinDescuento.text = String.format("Precio sin Descuento: " + PrecioNormal)
