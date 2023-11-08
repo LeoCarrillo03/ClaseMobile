@@ -16,6 +16,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
 
             <TextView
@@ -23,21 +25,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#86B4FA"
+                android:fontFamily="monospace"
                 android:gravity="center"
-                android:text="RIPLEYSTORE" />
+                android:text="RIPLEYSTORE"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="4dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/txtCategoria"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
                 android:layout_weight="1"
+                android:background="#DFE8E7"
+                android:fontFamily="sans-serif-black"
                 android:gravity="center"
                 android:text="Categoria:" />
 
@@ -51,14 +59,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="4dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/txtPrecio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="357dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="15dp"
                 android:layout_weight="1"
+                android:background="#DFE8E7"
+                android:fontFamily="sans-serif-black"
                 android:gravity="center"
                 android:text="Precio:" />
 
@@ -67,15 +78,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="number"/>
+                android:inputType="number" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="149dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
             <Button
@@ -83,6 +94,7 @@
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:rotationX="-12"
                 android:text="Button" />
         </LinearLayout>
 
@@ -97,8 +109,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
-                android:text="Detalle de Venta" />
+                android:text="Detalle de Venta"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -111,8 +125,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:text="Monto a Pagar Sin Descuento:" />
+                android:text="Monto a Pagar Sin Descuento:"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,8 +141,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:text="% Descuento Aplicado:" />
+                android:text="% Descuento Aplicado:"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -139,8 +157,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:text="Monto a Pagar con Descuento:" />
+                android:text="Monto a Pagar con Descuento:"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -153,8 +173,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:text="IGV:" />
+                android:text="IGV:"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -168,8 +190,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:text="Total a Pagar:" />
+                android:text="Total a Pagar:"
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
